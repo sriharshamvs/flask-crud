@@ -1,0 +1,74 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <form action="" method="POST">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Name</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Name"
+        aria-label="Name"
+        aria-describedby="basic-addon1"
+        name="name"
+        value="{{yellowpages.name}}"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Company Name</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Company Name"
+        aria-label="Company Name"
+        aria-describedby="basic-addon1"
+        name="company_name"
+        value="{{yellowpages.company_name}}"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Address</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="address"
+        aria-label="address"
+        aria-describedby="basic-addon2"
+        name="address"
+        value="{{yellowpages.address}}"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Email</span>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="email address"
+        aria-label="email address"
+        aria-describedby="basic-addon2"
+        name="email"
+        value="{{yellowpages.email}}"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1">Number</span>
+      <input
+        type="integer"
+        class="form-control"
+        placeholder="number"
+        aria-label="number"
+        aria-describedby="basic-addon2"
+        name="number"
+        value="{{yellowpages.number}}"
+      />
+    </div>
+    <div class="col-auto">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+
+{% endblock %}
